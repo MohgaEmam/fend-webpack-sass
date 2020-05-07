@@ -9,7 +9,7 @@ module.exports = {
         libraryTarget: 'var',
         library: 'client'
     },
-    mode: 'development',
+    mode: 'production',
     devtool: 'source-map',
     stats: 'verbose',
     module: {
