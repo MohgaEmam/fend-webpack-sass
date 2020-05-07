@@ -1,17 +1,38 @@
-import { checkForName } from './js/nameChecker'
-import { handleSubmit } from './js/formHandler'
-import './styles/resets.scss'
-import './styles/header.scss'
-import './styles/form.scss'
-import './styles/footer.scss'
-import './styles/base.scss'
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
 
-export {
-    checkForName,
-    handleSubmit
-}
+    <body>
 
-console.log(checkForName);
+        <header>
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
 
-alert("I EXIST")
-console.log("CHANGE!!");
+        <main>
+            <section>
+                <form class="" onsubmit="return handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            <section>
+
+            <section>
+                <strong>Form Results:</strong>
+                <div id="results"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+
+    </body>
+</html>
